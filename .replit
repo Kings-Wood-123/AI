@@ -33,3 +33,8 @@ outputType = "console"
 [[ports]]
 localPort = 8000
 externalPort = 8000
+
+[userenv]
+
+[userenv.shared]
+TELEGRAM_BOT_TOKEN = "7978043954:AAFoFI8re-GOodFu5VlsxnstINRjfRyEDqY"

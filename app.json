@@ -1,0 +1,51 @@
+{
+    "name": "WABeta News Bot",
+    "description": "A Telegram bot that posts WhatsApp news updates from WABetaInfo to your channel",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png",
+    "keywords": [
+        "Telegram",
+        "Bot",
+        "WhatsApp",
+        "News",
+        "RSS"
+    ],
+    "repository": "https://github.com/your-repo/wabeta-news-bot",
+    "env": {
+        "TELEGRAM_BOT_TOKEN": {
+            "description": "Your Bot Token from @BotFather",
+            "value": "",
+            "required": true
+        },
+        "TELEGRAM_CHANNEL_ID": {
+            "description": "Your Telegram Channel ID (e.g., -1001234567890)",
+            "value": "-1002446943144",
+            "required": true
+        },
+        "TELEGRAM_CHANNEL_USERNAME": {
+            "description": "Your Channel Username without @ (e.g., WhatsApp_Updates_X)",
+            "value": "WhatsApp_Updates_X",
+            "required": true
+        },
+        "TELEGRAM_ADMIN_ID": {
+            "description": "Your Telegram User ID for admin access",
+            "value": "5095434008",
+            "required": true
+        },
+        "HUGGINGFACE_TOKEN": {
+            "description": "Optional: HuggingFace API token for article summarization",
+            "value": "",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
