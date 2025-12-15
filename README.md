@@ -31,7 +31,7 @@
 
 | Platform | Link |
 |----------|------|
-| ☁️ Heroku | [![Deploy](https://img.shields.io/badge/Deploy_to-Heroku-6762a6?style=for-the-badge&logo=heroku)]([https://heroku.com/deploy?template=https://github.com/Kings-Wood-123/AI](https://dashboard.heroku.com/new?template=https://github.com/Kings-Wood-123/AI)) |
+| ☁️ Heroku | [![Deploy](https://img.shields.io/badge/Deploy_to-Heroku-6762a6?style=for-the-badge&logo=heroku)](https://www.heroku.com/deploy?template=https://github.com/Kings-Wood-123/AI) |
 
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
