@@ -6,7 +6,7 @@
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
 
-<h4 align="center">🔍 Advanced AI Text Analysis Bot</h4>
+<h4 align="center">🔍 Advanced Telegram Bot</h4>
 
 ---
 ### 🌟 Connect With Us
@@ -17,7 +17,7 @@
 
 > A powerful Telegram bot built for AI-powered text analysis and natural language processing  
 > Features sentiment analysis, deception detection, and multilingual support  
-> Built with ❤️ by [Itz_Me_Senula_2007](https://github.com/ItzMeSenula)
+> Built with ❤️ by [Itz_Me_Senula](https://github.com/ItzMeSenula)
 
 <p align="center">
   <a href="https://github.com/Kings-Wood-123/AI">
@@ -51,7 +51,7 @@
 
 | Command | Description |
 |---------|-------------|
-| `/analyze <text>` | Deep text analysis |
+| `/test <text>` | Deep text analysis |
 | `/humanize <text>` | Make text more natural |
 | `/language <text>` | Detect text language |
 | `/help` | Show all commands |
