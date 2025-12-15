@@ -17,10 +17,13 @@ from telegram.ext import (
 )
 from utils import get_image, build_caption, download_image, build_full_article, split_message
 
-TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "7978043954:AAFoFI8re-GOodFu5VlsxnstINRjfRyEDqY")
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID", "-1002446943144")
 CHANNEL_USERNAME = os.environ.get("TELEGRAM_CHANNEL_USERNAME", "WhatsApp_Updates_X")
 ADMIN_ID = int(os.environ.get("TELEGRAM_ADMIN_ID", "5095434008"))
+
+if not TOKEN:
+    raise ValueError("TELEGRAM_BOT_TOKEN environment variable is required!")
 FEED_URL = "https://wabetainfo.com/feed/"
 CHECK_INTERVAL = 300
 DB_FILE = "posts_history.db"
