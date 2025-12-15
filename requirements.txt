@@ -1,0 +1,12 @@
+python-telegram-bot[job-queue]==20.7
+feedparser==6.0.11
+flask==3.0.0
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+beautifulsoup4
+feedparser
+flask
+lxml
+python-telegram-bot[job-queue]
+requests

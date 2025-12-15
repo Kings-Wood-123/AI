@@ -1,6 +1,35 @@
+modules = ["python-3.11"]
 [nix]
 channel = "stable-25_05"
-packages = ["unzip"]
+packages = ["unzip", "xcodebuild", "zlib"]
 
 [agent]
 expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "WABeta News Bot"
+
+[[workflows.workflow]]
+name = "WABeta News Bot"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd bot && python main.py"
+waitForPort = 8000
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[[ports]]
+localPort = 8000
+externalPort = 8000
